@@ -2,7 +2,7 @@
 
 Name:           odroid-xu-uboot
 Version:        2014.03.28
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        U-boot for ODROID-XU
 
 Group:          System Environment/Base
@@ -58,5 +58,9 @@ done < %{_datadir}/%{name}/grubby-%{version}-%{release}
 /boot/uboot/u-boot.bin
 
 %changelog
+* Mon Apr 06 2015 Scott K Logan <logans@cottsay.net> - 2014.03.28-2
+- Make the boot.ini a config file
+- Default output to 720p (and more)
+
 * Fri Apr 03 2015 Scott K Logan <logans@cottsay.net> - 2014.03.28-1
 - Initial package
