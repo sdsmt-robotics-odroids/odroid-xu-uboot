@@ -54,7 +54,7 @@ done < %{_datadir}/%{name}/grubby-%{version}-%{release}
 %doc COPYING COPYING.txt CREDITS MAINTAINERS README
 %{_datadir}/%{name}/grubby
 %{_datadir}/%{name}/grubby-%{version}-%{release}
-/boot/uboot/boot.ini
+%config(noreplace) /boot/uboot/boot.ini
 /boot/uboot/u-boot.bin
 
 %changelog
